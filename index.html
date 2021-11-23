@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piccolo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="showcase">
+        <div class="header">
+            <div class="toggle-button"></div>
+            <div class="logo">
+                <h1>Piccolo</h1>
+                <h2>Pizzeria & Bar</h2>
+            </div>
+            
+            
+        </div>
+        
+        <!-- https://www.piccoloconcepts.com/video/video_piccolo.webm -->
+        <video src="images/video_piccolo.webm" muted loop autoplay ></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>All we knead is love</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eveniet possimus placeat deserunt voluptas rem quaerat ea, omnis sit quis.</p>
+            <a href="#">Find Us</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="https://www.facebook.com/piccolokt" target="blank"><img src="images/facebook.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/piccolo_pizzeria/?hl=en" target="blank"><img src="images/instagram.png" alt=""></a>
+            </li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Find Us</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle-button');
+        const showcase = document.querySelector('.showcase');
+
+        toggleBtn.addEventListener('click',()=>{
+            toggleBtn.classList.toggle('active');
+            showcase.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
